@@ -61,6 +61,7 @@ int main()
 
 
 		// 送信用メッセージの入力
+		
 		cout << "Input message : ";
 		cin >> buff;
 
@@ -96,30 +97,4 @@ int InitWinSock()
 	return WSAStartup(MAKEWORD(2, 2), &wsaData);
 }
 
-void ClientUDP::GamePlay()
-{
-	for(int i = 0; i< 5; i++)
-	{
-		//
-		if (Input::IsKeyDown(DIK_UP))
-		{
-			number[i] = 1;
-		}
 
-		if (Input::IsKeyDown(DIK_DOWN))
-		{
-			number[i] = 2;
-		}
-
-		if (Input::IsKeyDown(DIK_DOWN))
-		{
-			number[i] = 3;
-		}
-
-		if (Input::IsKeyDown(DIK_DOWN))
-		{
-			number[i] = 4;
-		}
-
-	}
-}
